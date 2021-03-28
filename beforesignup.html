@@ -1,0 +1,278 @@
+<main>
+
+  <section class="main-card">
+      <div class="card-content">
+          <div class="content-left">
+              <img class="full-img" src="https://relibion.in/images/Logo/signup-page.png" alt="">
+          </div>
+          <div class="content-right">
+              <h2>Sign up, login,  contact</h2>
+              <p>  <a href="signup.html" class="link" style="color: gray; text-decoration: none;">Sign up</a>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="login.html" class="link" style="color: grey; text-decoration: none;">Login</a>&emsp;&emsp;&emsp;&emsp;<a href="contact.html" class="link" style="color: grey; text-decoration: none;">Contact us</a></p>
+              <div class="mini-imgs">
+                  <img class="mini-img" src="https://img.freepik.com/free-vector/log-into-several-devices-responsive-app-design-wifi-zone-gadgets-online-communication-social-networking-web-connection-initialize-sign-up-vector-isolated-concept-metaphor-illustration_335657-1999.jpg?size=338&ext=jpg" alt="" >
+                  <img class="mini-img" src="https://codesthaan.com/wp-content/uploads/2020/10/mobile-login-concept-illustration_114360-83.jpg" alt="">
+                  <a href="contact.html"><img class="mini-img" src="https://unblast.com/wp-content/uploads/2020/09/Contact-Us-Vector-Illustration-Part-02-1.jpg" alt=""></a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+</main>
+<style>
+
+
+html,
+body {
+    box-sizing: border-box;
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #303336;
+    background-image: url('https://media.istockphoto.com/vectors/low-poly-orange-red-gradient-background-vector-id941910040?k=6&m=941910040&s=170667a&w=0&h=KvM1pJAXUI2fnZhraZUyuSkQcWfNO_CNqx1se9tIA7c= ');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.link:hover {
+  color: #222
+}
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 640px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1;
+}
+
+p {
+  margin-top: 100px;
+    font-size: 1em;
+    color: #7B8591;
+}
+@media only screen and (max-width: 600px) {
+  p {
+    margin-top: -180px;
+  }
+  h2 {
+    font-size: 2em;
+margin-top: -20px;
+  }
+  .main-card {
+    height: 670px;
+
+  }
+}
+::selection {
+    color: #fff;
+    background-color: #005AEE;
+}
+
+
+.main-card {
+    position: relative;
+    width: 770px;
+    height: 470px;
+    margin: 20px;
+    border-radius: 10px;
+    font-family: 'neuzeit-grotesk', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #303336;
+    background-color: #fff;
+    box-shadow: 0 40px 40px -20px #8fc7d544;
+}
+
+.main-card .card-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.main-card .content-left {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f6f6f6;
+}
+
+.main-card .content-left img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-card .content-right {
+    position: relative;
+    width: calc(100% - 300px);
+    height: 100%;
+    padding-left: 35px;
+}
+
+.main-card .tag {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    width: fit-content;
+    padding: 8px 25px;
+    border-radius: 10px;
+    background-color: #005AEE;
+}
+
+.main-card .tag h6 {
+    color: #fff;
+    font-size: .75em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.main-card .mini-imgs {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    height: 105px;
+}
+
+.main-card .mini-imgs img {
+    width: 105px;
+    height: 105px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.main-card .mini-imgs img:hover {
+    opacity: .75;
+}
+
+.main-card .mini-imgs img:nth-child(2) {
+    margin: 0 10px;
+}
+
+/* Display this style when screen-width is lower than 992px */
+@media only screen and (max-width: 992px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .main-card {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 80px 20px;
+    }
+
+    .main-card .card-content {
+        flex-direction: column;
+    }
+
+    .main-card .content-left {
+        width: 100%;
+        height: 300px;
+    }
+
+    .main-card .content-right {
+        width: 100%;
+        height: auto;
+        padding: 175px 0 0;
+    }
+
+    .main-card .tag {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .main-card .mini-imgs {
+        position: absolute;
+        display: flex;
+        top: 0;
+        margin-top: 35px;
+        height: 105px;
+    }
+
+}
+
+/* Display this style when screen-width is lower than 500px */
+@media only screen and (max-width: 500px) {
+
+    .main-card {
+        margin: 120px 20px;
+    }
+
+    .main-card .card-content {
+        padding: 25px;
+    }
+
+    .main-card .content-right {
+        width: 100%;
+        height: auto;
+        padding: 115px 0 0;
+    }
+
+    .main-card .mini-imgs {
+        margin-top: 20px;
+    }
+
+    .main-card .mini-imgs img {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+/* Just Copy The Code Above */
+/* ======================== */
+
+/* ----------- */
+/* UI Designer */
+/* ----------- */
+
+.designer {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    color: #46a2b9;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.designer a {
+    text-decoration: none;
+    color: #23515d;
+}
+
+</style>

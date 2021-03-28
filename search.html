@@ -1,0 +1,341 @@
+
+<head>
+
+</head>
+<body>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type='text/css'/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.7.8/css/jquery.mmenu.all.css' rel='stylesheet' type='text/css'/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css' rel='stylesheet' type='text/css'/>
+
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.7.8/js/jquery.mmenu.all.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<style>
+  .ml13 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  font-family: Helvetica;
+}
+
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+<script>
+  var textWrapper = document.querySelector('.ml13');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+.add({
+  targets: '.ml13 .letter',
+  translateY: [100,0],
+  translateZ: 0,
+  opacity: [0,1],
+  easing: "easeOutExpo",
+  duration: 1400,
+  delay: (el, i) => 300 + 30 * i
+}).add({
+  targets: '.ml13 .letter',
+  translateY: [0,-100],
+  opacity: [1,0],
+  easing: "easeInExpo",
+  duration: 1200,
+  delay: 10000*10000000
+});
+</script>
+    
+<head>
+
+</head>
+<body>
+    <br>
+    &emsp;<a href="index.html"><span id="font" class='glyphicon glyphicon-arrow-left' style="font-size: 30px; margin-top: -9px;"/></span></a>
+ <style>
+     #font {
+         color: #222;
+         transition: all 0.9s ease 0s;
+
+
+     }
+     #font:hover {
+         color: tomato;
+         transition: all 0.9s ease 0s;
+
+     }
+ </style>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <center><div id="wrapper"><br>
+<center><h1 class="ml13">Search for companies</h1></center>
+<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<style>
+  .ml13 {
+  font-size: 2.9em;
+  text-transform: uppercase;
+  color: ivory;
+  text-shadow: 2px 2px 10px #222;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>
+<script>
+  var textWrapper = document.querySelector('.ml13');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+.add({
+  targets: '.ml13 .letter',
+  translateY: [100,0],
+  translateZ: 0,
+  opacity: [0,1],
+  easing: "easeOutExpo",
+  duration: 1400,
+  delay: (el, i) => 300 + 30 * i
+}).add({
+  targets: '.ml13 .letter',
+  translateY: [0,-100],
+  opacity: [1,0],
+  easing: "easeInExpo",
+  duration: 1200,
+  delay: 10000*10000000
+});
+</script>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #myInput {
+      background-image: url('/css/searchicon.png');
+      background-position: 10px 12px;
+      background-repeat: no-repeat;
+      width: 90%;
+      border-radius: 4px;
+      color: #222;
+      font-size: 16px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+
+    }
+
+    #myUL {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #myUL li a {
+      border: 2px solid #222;
+      margin-top: -2px;
+      border-radius: 5px;
+      background-color: #ff9c40;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #222;
+      width: 90%;
+      display: block;
+      transition: all 0.3s ease 0s;
+
+    }
+
+    #myUL li a:hover:not(.header) {
+      background-color: tomato;
+      color: ivory;
+      transition: all 0.3s ease 0s;
+    }
+    </style>
+    
+    <center>   <div id="txt">
+<p style="font-family: Helvetica; font-size: 18px; color: #222;">Search for companies by company names or by keywords such as Technology, animals, or environment.</p>
+</div></center>
+    <style>
+    #txt {
+      width: 60%;
+    }
+    </style>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for company names and/or keywords (Tech, animals etc.)" title="Type in a name">
+
+    <ul id="myUL">
+      <li><a href="https://equable-separated-crowley.glitch.me/">Google ads - technology - online  </a></li>
+      <li><a href="#">Microsoft teams - technology - online</a></li>
+      <li><a href="#">Spotify front end development - technology - online</a></li>
+      <li><a href="#">Rogers technechal support - technology - online</a></li>
+      <li><a href="#">Best vet online vetranarien - animals - vet - online</a></li>
+      <li><a href="#">Canadian blood services - technology - online</a></li>
+
+
+    </ul>
+
+    <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+    var ul = document.querySelector('ul');
+  for (var i = ul.children.length; i >= 0; i--) {
+      ul.appendChild(ul.children[Math.random() * i | 0]);
+  }
+  </script>
+<style>
+
+
+
+
+#wrapper {
+  position: relative;
+  width: 780px;
+  height: 570px;
+  background-image: url('https://media.istockphoto.com/vectors/low-poly-orange-red-gradient-background-vector-id941910040?k=6&m=941910040&s=170667a&w=0&h=KvM1pJAXUI2fnZhraZUyuSkQcWfNO_CNqx1se9tIA7c= ');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+  overflow-x: hidden;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    width: 450px;
+height: 500px;
+margin-top:-100px;
+  overflow-y: scroll;
+  }
+  .ml13 {
+    font-size: 26px;
+  }
+
+}
+#wrapper:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 500px;
+  border-radius: 250px;
+      right: -150px;
+  bottom: -70px;
+
+}
+
+</style>
+  </div>
+</body>
+
+
+    </div></center>
+<style>
+
+#cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-left: 50px;
+  overflow: scroll;
+}
+#cards::-webkit-scrollbar {
+  display: none;
+}
+
+#cardsWrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-right: 50px;
+}
+
+.card {
+  width: 420%;
+  height: 223px;
+  perspective: 500px;
+  margin: 0 23px;
+  flex-shrink: 0;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 20px 40px -20px #9d6b23;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background-size: cover;
+  border-radius: 10px;
+  border: 3px solid tomato;
+}
+
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.22);
+  transform: translateZ(35px) scale(0.93);
+}
+
+.text {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  color: white;
+  transform: translateZ(35px) scale(0.93);
+  font-family: "Quicksand", sans-serif;
+}
+.text p {
+  cursor: default;
+}
+.text p:first-of-type {
+  font-weight: 500;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+.text p:last-of-type {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+</style>
+  </div>
+</body>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <script src='https://hammerjs.github.io/dist/hammer.min.js'></script>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+<style>
+  <style>
+li {
+    margin-bottom: 10px;
+
+}
+ul {
+  list-style-type: none;
+  outline: none;
+
+}
+.cool-link {
+    display: inline-block;
+    color: #000;
+    outline: none;
+
+    text-decoration: none;
+}
+.cool-link:hover {
+    display: inline-block;
+    color: #000;
+    outline: none;
+
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    outline: none;
+
+    transition: width .3s;
+    text-decoration: none;
+
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    text-decoration: none;
+}
+</style>
+</style>
+<body>
+  
+  <p>All of these  companies are examples used for demonstration purposes. </p>
+
+  <center><p style="font-size: 30px; color: ivory; margin-top: 100px;"><b>Online technology-centered volunteering</b> </p></center>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <div class="tinder">  
+
+  <div class="tinder--cards">
+   
+    <div class="tinder--card">
+      <br><br>
+      <img src="https://www.dewaweb.com/blog/wp-content/uploads/2018/08/google-ads-logo-dewaweb-1024x461.png">
+      <h3></h3>
+   <br><br>
+      <p>Google ads. Online, ages 17+. Stil looking for volunteers: ✔   </p>
+      <ul>
+        <li><a class="cool-link" style="margin-left: -40px; margin-top: 30px;color: tomato; text-shadow: 2px 2px 20px #222;" href="#">More about the opporunity.</a></li>
+
+      </ul>
+    </div>
+    <div class="tinder--card">
+      <br><br>
+      <img src="https://www.atc-logistics.ie/wp-content/uploads/2017/12/Microsoft-Teams-Logo.png">
+      <p> Microsoft teams. Online, ages 16+. No further requirments. Sitll looking for volunteers:  ✔ </p>
+      <ul>
+        <li><a class="cool-link" style="margin-left: -40px; margin-top: 30px;color: tomato; text-shadow: 2px 2px 20px #222;" href="#">Get started with out chat!</a></li>
+
+      </ul>
+    </div>
+    <div class="tinder--card">
+      <br><br>
+      <img src="https://th.bing.com/th/id/Rc99cc2d3d9d026319f5868b575ea6da6?rik=Bu4Wu6%2fEIjRb3w&riu=http%3a%2f%2fstatic2.businessinsider.com%2fimage%2f55801a50eab8ea1f1a3304f1-1200-364%2fspotify-logo.png&ehk=nPuYh82jiwvvhWs098el3V6n%2fPOTw67hj%2f2zus26r0A%3d&risl=&pid=ImgRaw">
+      <h3></h3>
+      <p>Spotify front end development. Online, ages 18+. Must be studying technology. Still looking for volunteers:   ✔ </p>
+      <ul>
+        <li><a class="cool-link" style="margin-left: -40px; margin-top: 30px;color: tomato; text-shadow: 2px 2px 20px #222;" href="#">Get started with out chat!</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+
+    <style>
+        *, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('https://media.istockphoto.com/vectors/low-poly-orange-red-gradient-background-vector-id941910040?k=6&m=941910040&s=170667a&w=0&h=KvM1pJAXUI2fnZhraZUyuSkQcWfNO_CNqx1se9tIA7c= ');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.tinder {
+  width: 100vw;
+  height: 800px;
+  margin-top: -200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.loaded.tinder {
+  opacity: 1;
+}
+
+.tinder--cards {
+  flex-grow: 1;
+  padding-top: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.tinder--card {
+  display: inline-block;
+  width: 90vw;
+  max-width: 400px;
+  height: 50vh;
+  background: #FFFFFF;
+  padding-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  will-change: transform;
+  transition: all 0.3s ease-in-out;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.moving.tinder--card {
+  transition: none;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.tinder--card img {
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.tinder--card h3 {
+  margin-top: 32px;
+  font-size: 32px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.tinder--card p {
+  margin-top: 24px;
+  font-size: 20px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+
+    </style>
+
+<script>
+    'use strict';
+
+var tinderContainer = document.querySelector('.tinder');
+var allCards = document.querySelectorAll('.tinder--card');
+var nope = document.getElementById('nope');
+var love = document.getElementById('love');
+
+function initCards(card, index) {
+  var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
+
+  newCards.forEach(function (card, index) {
+    card.style.zIndex = allCards.length - index;
+    card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 30 * index + 'px)';
+    card.style.opacity = (10 - index) / 10;
+  });
+  
+  tinderContainer.classList.add('loaded');
+}
+
+initCards();
+
+allCards.forEach(function (el) {
+  var hammertime = new Hammer(el);
+
+  hammertime.on('pan', function (event) {
+    el.classList.add('moving');
+  });
+
+  hammertime.on('pan', function (event) {
+    if (event.deltaX === 0) return;
+    if (event.center.x === 0 && event.center.y === 0) return;
+
+    tinderContainer.classList.toggle('tinder_love', event.deltaX > 0);
+    tinderContainer.classList.toggle('tinder_nope', event.deltaX < 0);
+
+    var xMulti = event.deltaX * 0.03;
+    var yMulti = event.deltaY / 80;
+    var rotate = xMulti * yMulti;
+
+    event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
+  });
+
+  hammertime.on('panend', function (event) {
+    el.classList.remove('moving');
+    tinderContainer.classList.remove('tinder_love');
+    tinderContainer.classList.remove('tinder_nope');
+
+    var moveOutWidth = document.body.clientWidth;
+    var keep = Math.abs(event.deltaX) < 80 || Math.abs(event.velocityX) < 0.5;
+
+    event.target.classList.toggle('removed', !keep);
+
+    if (keep) {
+      event.target.style.transform = '';
+    } else {
+      var endX = Math.max(Math.abs(event.velocityX) * moveOutWidth, moveOutWidth);
+      var toX = event.deltaX > 0 ? endX : -endX;
+      var endY = Math.abs(event.velocityY) * moveOutWidth;
+      var toY = event.deltaY > 0 ? endY : -endY;
+      var xMulti = event.deltaX * 0.03;
+      var yMulti = event.deltaY / 80;
+      var rotate = xMulti * yMulti;
+
+      event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
+      initCards();
+    }
+  });
+});
+
+function createButtonListener(love) {
+  return function (event) {
+    var cards = document.querySelectorAll('.tinder--card:not(.removed)');
+    var moveOutWidth = document.body.clientWidth * 1.5;
+
+    if (!cards.length) return false;
+
+    var card = cards[0];
+
+    card.classList.add('removed');
+
+    if (love) {
+      card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
+    } else {
+      card.style.transform = 'translate(-' + moveOutWidth + 'px, -100px) rotate(30deg)';
+    }
+
+    initCards();
+    
+    event.preventDefault();
+  };
+}
+
+var nopeListener = createButtonListener(false);
+var loveListener = createButtonListener(true);
+
+nope.addEventListener('click', nopeListener);
+love.addEventListener('click', loveListener);
+</script>
+
+</body>
+
+</html>

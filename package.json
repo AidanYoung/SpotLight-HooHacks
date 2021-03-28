@@ -1,0 +1,12 @@
+{
+    "name": "live-chat-example",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "date; node app.js"
+    },
+    "dependencies": {
+      "express": "^4.16.4",
+      "socket.io": "^2.3.0"
+    }
+  }
+  
